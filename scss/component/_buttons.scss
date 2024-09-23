@@ -1,0 +1,28 @@
+@use "../abstracts" as var;
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn {
+  --button-color : var(--bg-button-color);
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  transition: all ease 0.25s;
+  background: transparent;
+  color : var(--button-color);
+  padding: 20px 30px;
+
+  border: 1px solid var(--button-color);
+
+  &:hover {
+    color : #FFF;
+    background: var(--button-color);
+  }
+}

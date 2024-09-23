@@ -1,0 +1,172 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+
+    .footer-left {
+        background: var(--bg-secondary-color);
+        min-width: 24px;
+    }
+
+    .footer-right {
+        background: var(--bg-primary-color);
+        min-width: 24px;
+    }
+
+    .footer-main.content {
+        max-width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        .main-left {
+            background: var(--bg-secondary-color);
+            width: 41%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 52px;
+            padding-bottom: 114px;
+
+            .email-form {
+                margin-top: 40px;
+                width: 268px;
+                height: 46px;
+                border-radius: 99px;
+                border: 1px solid rgba(255, 91, 46, 0.25);
+                background: #FFF;
+                display: flex;
+                justify-content: space-between;
+
+                input.email-input {
+                    width: 100%;
+                    padding: 16px 22px;
+                    outline: none;
+                    border: none;
+                    border-radius: inherit;
+
+                    &::placeholder {
+                        color: #656689;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        line-height: 1.16; 
+                        opacity: 0.7;
+                    }
+                }
+
+                .submit-btn {
+                    width: 46px;
+                    height: 46px;
+                    border: 1px solid var(--bg-button-color);
+                    background: var(--bg-button-color);
+                    border-radius: 50%;
+                    color : #FFF;
+                    box-shadow: 0px 5px 27px 0px rgba(255, 91, 46, 0.30);
+                    cursor: pointer;
+
+                    flex-shrink: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .social-media {
+                margin-top: 68px;
+
+                .title {
+                    color: var(--text-heading-color);
+                    font-family: Sora;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.11
+                }
+
+                .social-list {
+                    margin-top: 16px;
+                    display: flex;
+                    gap: 16px;
+
+
+                }
+
+                .social-item {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    box-shadow: 0px 16px 28px -10px rgba(211, 132, 53, 0.33);
+                    background: #FFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.6;
+                        background: var(--bg-button-color);
+                    }
+                }
+            }
+        }
+
+        .main-right {
+            padding-top: 52px;
+            padding-bottom: 114px;
+            padding-left: 130px;
+
+            .footer-menu-list {
+                display: grid;
+                grid-template-columns: auto auto;
+                row-gap: 60px;
+                column-gap: 130px;
+                justify-content: space-between;
+            }
+
+            .footer-menu-item {
+                .title {
+                    color: var(--text-heading-color);
+                    font-family: Sora;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.11;
+                }
+
+                ul {
+                    &.link li {
+                        cursor: pointer;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                        
+                    }
+                    
+                    li {
+                        color: #656689;
+                        font-size: 1.4rem;
+                        line-height: 2;
+
+                        &:first-child {
+                            margin-top: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            color: var(--text-paragraph-color);
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.16;
+
+            opacity: 0.5;
+        }
+    }
+}

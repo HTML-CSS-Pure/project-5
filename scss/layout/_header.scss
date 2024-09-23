@@ -1,0 +1,43 @@
+.header {
+  padding: 26px 0;
+  background: inherit;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav.navbar {
+    .menu {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .item {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1;
+      color : #5E6085;
+
+      &:hover,&.active {
+        color : var(--text-heading-color);
+        text-shadow: 1px 0 0 currentColor;
+      }
+    }
+  }
+
+  .register {
+    .btn {
+      --button-color : #000958;
+      font-weight: 600;
+      font-size: 1.4rem;
+      padding: 18px 30px;
+
+      &:hover {
+        --button-color : var(--bg-button-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
